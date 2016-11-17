@@ -1,0 +1,25 @@
+section {
+    width: 50%;
+    margin: 0 auto;
+}
+h2 {
+    position: relative;
+    background: #e1e1e1;
+}
+h2:before, h2:after {
+    content: "";
+    position: absolute;
+    background: #e1e1e1;  /* Соответствует фону элемента h2 */
+    top: 0;
+    bottom: 0;
+    width: 9999px;   /* Очень большая ширина */
+}
+h2:before {
+    right: 100%;
+}
+h2:after {
+    left: 100%;
+}
+body {
+    overflow-x: hidden;
+}

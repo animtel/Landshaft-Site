@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vhod</title>
+	<meta charset="UTF-8">
+     <script type="text/javascript">
+
+	 function log () {
+//-----------------------------------------------------------------------LOGIN
+		var login = document.getElementById("name").value;
+		if (login=="")
+			return(alert("Ошибка имени"))
+		
+		
+//----------------------------------------------------------------------MAIL
+		var mail = document.getElementById("mail").value;
+		var val = false;
+        var vak = false;
+		for(var i = 0; i < mail.length && mail[i] != "@"; i++){}
+		if (mail[i] == "@")
+			var val = true;
+		
+		for(var k=i; k < mail.length; k++ ){
+					if(mail[k] == ".")
+						vak = true;
+				}
+		if (val==false  || vak==false)
+			return(alert("Вы ввели неправильный email!"))
+//----------------------------------------------------------------------PASSWORD		
+var p = document.getElementById("password").value;
+		if(p.length < 8)
+			return(alert("Пароль слишком короткий!"));
+
+
+alert(login + ";" + mail + ";" + p);
+	}
+	</script>
+	
+</head>
+<body>
+<div id="center">
+	<div id="tex"><h1>Vhod</h1></div>
+		<div id="tex1">
+ 			<div align="center">
+     <h1 id="vhod"> FORMA</h1>
+
+	 <form name="form" method="post" action="#">
+	 <h1> Name </h1>
+	 <p>Введите логин: <input type="text" rows="1" cols="15" id="name" value=""></p>
+	 <p>Введите пароль:<input type="text" rows="1" cols="15" id="password" value=""></p>
+	 <p>Введите email: <input type="email" rows="1" cols="15" id="mail" required></p>
+	 <p><input type="submit"  name="send" value="Отправить" onclick="log ()"></p>
+	 </form>
+
+
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
