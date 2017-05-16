@@ -1,0 +1,198 @@
+html, body {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #79BD8F;
+}
+
+p, li{
+    font-size: 1.2vw;
+}
+
+h2 {
+    font-size: 1.9vw;
+}
+/*=====Header=====*/
+#top-menu {
+    background: #EDEDED;
+    border-bottom: 2px solid #3B5998;
+    z-index:9999;
+    box-shadow: 0 0 20px #616161;
+}
+
+#top-menu a {
+    background: #EDEDED;
+    text-align: center;
+    padding: 9px;
+    text-decoration: none;
+    line-height: 33px;
+    transition: all .6s;
+    color: black;
+    font-size: 15pt;
+}
+
+#top-menu a:hover {
+    background: #FFA632;
+    color: #FFFFFF;
+}
+
+#top-menu a:active {
+    background: #e66b25;
+}
+
+#top-menu li {
+    height: 100%;
+}
+
+#tes {
+    height: 100%;
+}
+
+#tes a{
+    color: #3B5998;
+    font-size: 30px;
+}
+
+#watch{
+    color: black;
+    font-size: 20px; 
+    font-weight: bold;
+    margin: 10px;
+    
+    border-radius: 3px;
+    float: right;
+    box-shadow:0 0 5px #000000;
+    padding: 1px;
+    background-color: #00A388;
+} 
+#btnMob {
+    margin: -5px;
+    margin-top: 0;
+    padding-top: 6px;
+}
+/*!=====Header=====*/
+
+/*=====Main=====*/
+#content {
+    height: 95%;
+}
+
+#center {
+    padding-bottom: 10px;
+    padding-top: 3px;
+    background-color: #F7F7F7;
+    /*border: solid 0.5px #000000;*/
+    border-radius: 2px;
+    color: black;
+    box-shadow: 0 0 15px #000000;
+    filter: alpha(Opacity=70);
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+#tdcent{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#tex {
+    text-align: center;
+    box-shadow: 0 0 10px #000000;
+    background-color: #00A388;
+    text-shadow: 1px 1px 1px #4e4e4e, 0 0 0em #ffad5e;
+    margin-bottom: 2px;
+    font-size: 1.5vw;
+}
+
+.tex1 {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #3B5998;
+    padding: 10px;
+    box-shadow: 0 0 5px #000000;
+    border-radius: 10px;
+    position: relative;
+}
+
+.tex1 img {
+    width: 100%;
+}
+/*=====Galery=====*/
+#thumbs {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+#thumbs img, #largeImage {
+    border: 1px solid gray;
+    padding: 4px;
+    background-color: white;
+    cursor: pointer;
+    margin: auto;
+}
+
+#thumbs img {
+    float: left;
+    margin-right: 6px;
+}
+/*!=====Galery=====*/
+
+/*=====Order=====*/
+#order table {
+    margin: auto;
+    text-align: center;
+}
+
+#order {
+    text-align: center;
+}
+
+#order h1 {
+    font-size: 2vw;
+}
+/*!=====Order=====*/
+
+/*=====About=====*/
+#about img {
+    width: 10%;
+    float: left;
+    border: 1vw solid lightgray;
+    margin: -4px 10px 5px 0;
+}
+
+#about h2 {
+    clear: left;
+    font-size: 1.9vw;
+}
+/*!=====About=====*/
+
+/*!=====Main=====*/
+
+/*=====buttonOnTop=====*/
+a.topbutton {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/up2.png);
+    background-size: contain;
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    opacity: 0.3;
+}
+
+a.topbutton:hover{
+    opacity: 1;
+}
+
+/*!=====buttonOnTop=====*/
+
+/*=====Footer=====*/
+#footer {
+    background: #EDEDED;
+    border-top: 2px solid #3B5998;
+    z-index:9999;
+    box-shadow: 0 0 20px #616161;
+    text-align: center;
+    font-size: 30px;
+}
+/*!=====Footer=====*/
